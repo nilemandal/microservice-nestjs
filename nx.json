@@ -1,7 +1,5 @@
 {
-  "installation": {
-    "version": "21.2.0"
-  },
+  "installation": { "version": "21.2.0" },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "nxCloudId": "684d5036c98c55115d07f213",
   "plugins": [
@@ -15,17 +13,10 @@
         "watchDepsTargetName": "watch-deps"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
     {
       "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      },
+      "options": { "targetName": "test" },
       "exclude": ["jobber-auth-e2e/**/*"]
     }
   ],
