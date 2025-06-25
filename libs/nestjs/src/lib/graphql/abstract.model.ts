@@ -4,4 +4,7 @@ import { Field, ID, ObjectType } from '@nestjs/graphql';
 export class AbstractModel {
     @Field(() => ID)
     id: number;
+
+    @Field()
+    email: string;
 }
