@@ -17,7 +17,7 @@ export class AuthService {
 
   async login({ email, password }: LoginInput, response: Response) {
     const user = await this.validateUser(email, password);
-    console.log('User authenticated:', user);
+
     const expires = new Date();
     expires.setMilliseconds(
       expires.getTime() +
